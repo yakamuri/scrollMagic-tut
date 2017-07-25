@@ -1,0 +1,91 @@
+#page-content {
+  width: 100%;
+  height: 100%;
+}
+#slides-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  #slides {
+    width: 100%;
+    height: 200%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #5bc0de;
+  }
+  .slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  #slides-1 {
+    background-image: url('../images/Cortal_Consors_Selfie.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  #slides-2 {
+    background-image: url('../images/Lufthansa-Passangers_on_Tour-Teaser.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include transform(translate(0, 100%));
+  }
+  #slides-3 {
+    background-image: url('../images/Samova-flowering-teabag_teaser.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include transform(translate(0, 200%));
+  }
+  #slides-4 {
+    background-image: url('../images/icebersongs-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include transform(translate(0, 300%));
+  }
+  .caption {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: $colorRed;
+    padding: 1em 0;
+
+    h1 {
+      text-transform: uppercase;
+      @include fontNormal();
+      color: $colorWhite;
+    }
+  }
+}
+#helper {
+  position: absolute;
+  height: 600%;
+  width: 20px;
+  left: 0;
+  top: 0;
+}
+.marker {
+  height: 25%;
+  width: 100%;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}

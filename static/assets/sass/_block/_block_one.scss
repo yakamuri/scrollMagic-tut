@@ -1,0 +1,58 @@
+#block_one {
+  background-image: url('../images/Cortal_Consors_Selfie.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  //overflow: hidden;
+  position: relative;
+}
+.paralax_section {
+  width: 100%;
+  height: 900px !important;
+  //overflow: hidden !important;
+  position: relative;
+  overflow: hidden;
+}
+.dot-navigation {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  z-index: 1000;
+  margin-top: -53px;
+  overflow: visible;
+
+  ul {
+    padding: 0;
+    overflow: visible;
+
+    li {
+      width: 20px;
+      height: 20px;
+      overflow: visible;
+      margin-bottom: 10px;
+      list-style-type: none;
+
+      a {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #da0f15;
+        overflow: visible;
+        background-position: top left;
+        background-repeat: no-repeat;
+        position: relative;
+
+        &:hover {
+          background-color: #ffffff;
+        }
+      }
+
+      &.current {
+        a {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}
