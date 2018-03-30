@@ -1,58 +1,48 @@
-#block_one {
-  background-image: url('../images/Cortal_Consors_Selfie.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 800px;
-  //overflow: hidden;
-  position: relative;
+/* Sass color variables */
+$blue: #0089cd;
+$white: #ffffff;
+
+/* Make the body 100% of the browser viewport height */
+html, body {
+  height: 100%;
+  margin: 0;
 }
-.paralax_section {
-  width: 100%;
-  height: 900px !important;
-  //overflow: hidden !important;
-  position: relative;
-  overflow: hidden;
+h1 {
+  padding: 20% 0 0 0;
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
 }
-.dot-navigation {
-  position: fixed;
-  right: 30px;
-  top: 50%;
-  z-index: 1000;
-  margin-top: -53px;
-  overflow: visible;
+p {
+  text-align: center;
+  color: transparentize($white, 0.5);
+}
+strong {
+  color: #fff;
+}
 
-  ul {
-    padding: 0;
-    overflow: visible;
+/* Make each section 100% of the browser viewport height */
+section {
+  height: 100%;
+  color: white;
+  position: relative;
+  text-align: center;
 
-    li {
-      width: 20px;
-      height: 20px;
-      overflow: visible;
-      margin-bottom: 10px;
-      list-style-type: none;
+  /* Center the content of the sections */
+  .inner {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+}
 
-      a {
-        display: block;
-        width: 20px;
-        height: 20px;
-        background-color: #da0f15;
-        overflow: visible;
-        background-position: top left;
-        background-repeat: no-repeat;
-        position: relative;
-
-        &:hover {
-          background-color: #ffffff;
-        }
-      }
-
-      &.current {
-        a {
-          background-color: #ffffff;
-        }
-      }
-    }
+/* Background colors for each section */
+section#one { background-color: $blue; }
+section#two { background-color: darken($blue, 10%); }
+section#three { background-color: lighten($blue, 5%); }
+section#four {
+  background-color:  darken($blue, 10%);
+  transition: all 0.4s linear;
+  &.is-active {
+    background-color: #222222;
   }
 }

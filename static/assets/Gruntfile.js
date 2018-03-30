@@ -33,7 +33,8 @@ module.exports = function(grunt) {
             custom: {
                 files: {
                     'js/app.min.js': [
-                        'js/toMinify/_main.js'
+                        'js/toMinify/_main_first.js'
+                        //'js/toMinify/_main_second.js'
                     ]
                 }
             },
@@ -41,7 +42,11 @@ module.exports = function(grunt) {
                 files: {
                     'js/vendor.min.js': [
                         'js/toMinify/vendor/jquery.min.js',
-                        'js/toMinify/vendor/modernizr.custom.92950.js'
+                        'js/toMinify/vendor/modernizr.custom.92950.js',
+                        'js/toMinify/vendor/TweenMax.min.js',
+                        'js/toMinify/vendor/scrollMagic.js',
+                        'js/toMinify/vendor/animation.gsap.min.js',
+                        'js/toMinify/vendor/debug.addIndicators.min.js'
                     ]
                 }
             }
